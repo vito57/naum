@@ -14,66 +14,71 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Switch } from "@/components/ui/switch"
 import { Textarea } from "@/components/ui/textarea"
 import { ArrowUp01Icon, SearchAlert } from "lucide-react"
+import { BorderBeam } from 'border-beam';
+
+
+
 
 
 export function UIElements() {
     return (
-        <Card className="w-full">
-            <CardContent className="flex flex-col gap-6">
-                <div className="flex gap-2">
-                    <Button>
-                        Button{" "}
-                        <ArrowUp01Icon />
-                    </Button>
-                    <Button variant="secondary">Secondary</Button>
-                    <Button variant="secondary" >Outline</Button>
-                </div>
-                <FieldGroup>
-                    <Field>
-                        <InputGroup>
-                            <InputGroupInput placeholder="Name" />
-                            <InputGroupAddon align="inline-end">
-                                <InputGroupText>
-                                    <SearchAlert />
-                                </InputGroupText>
-                            </InputGroupAddon>
-                        </InputGroup>
-                    </Field>
-                    <Field className="flex-1">
-                        <Textarea placeholder="Message" className="resize-none" />
-                    </Field>
-                </FieldGroup>
-                <div className="flex items-center gap-2">
+        <BorderBeam>
+            <Card className="w-full">
+                <CardContent className="flex flex-col gap-6">
                     <div className="flex gap-2">
-                        <Badge>Badge</Badge>
-                        <Badge variant="secondary">Secondary</Badge>
-                        <Badge variant="outline" className="hidden 4xl:flex">
-                            Outline
-                        </Badge>
+                        <Button>
+                            Button{" "}
+                            <ArrowUp01Icon />
+                        </Button>
+                        <Button variant="secondary">Secondary</Button>
+                        <Button variant="secondary" >Outline</Button>
                     </div>
-                    <RadioGroup
-                        defaultValue="apple"
-                        className="ml-auto flex w-fit gap-3"
-                        aria-label="Fruit preference"
-                    >
-                        <RadioGroupItem value="apple" aria-label="Apple" />
-                        <RadioGroupItem value="banana" aria-label="Banana" />
-                    </RadioGroup>
-                    <div className="flex gap-3">
-                        <Checkbox defaultChecked aria-label="Enable email alerts" />
-                        <Checkbox
-                            className="hidden 4xl:flex"
-                            aria-label="Enable push alerts"
+                    <FieldGroup>
+                        <Field>
+                            <InputGroup>
+                                <InputGroupInput placeholder="Name" />
+                                <InputGroupAddon align="inline-end">
+                                    <InputGroupText>
+                                        <SearchAlert />
+                                    </InputGroupText>
+                                </InputGroupAddon>
+                            </InputGroup>
+                        </Field>
+                        <Field className="flex-1">
+                            <Textarea placeholder="Message" className="resize-none" />
+                        </Field>
+                    </FieldGroup>
+                    <div className="flex items-center gap-2">
+                        <div className="flex gap-2">
+                            <Badge>Badge</Badge>
+                            <Badge variant="secondary">Secondary</Badge>
+                            <Badge variant="outline" className="hidden 4xl:flex">
+                                Outline
+                            </Badge>
+                        </div>
+                        <RadioGroup
+                            defaultValue="apple"
+                            className="ml-auto flex w-fit gap-3"
+                            aria-label="Fruit preference"
+                        >
+                            <RadioGroupItem value="apple" aria-label="Apple" />
+                            <RadioGroupItem value="banana" aria-label="Banana" />
+                        </RadioGroup>
+                        <div className="flex gap-3">
+                            <Checkbox defaultChecked aria-label="Enable email alerts" />
+                            <Checkbox
+                                className="hidden 4xl:flex"
+                                aria-label="Enable push alerts"
+                            />
+                        </div>
+                        <Switch
+                            defaultChecked
+                            className="flex 4xl:hidden"
+                            aria-label="Enable compact notifications"
                         />
                     </div>
-                    <Switch
-                        defaultChecked
-                        className="flex 4xl:hidden"
-                        aria-label="Enable compact notifications"
-                    />
-                </div>
-                <div className="flex items-center gap-4">
-                    {/* <AlertDialog>
+                    <div className="flex items-center gap-4">
+                        {/* <AlertDialog>
                         <AlertDialogTrigger render={<Button variant="outline" />}>
                             <span className="hidden md:flex style-sera:md:hidden">
                                 Alert Dialog
@@ -94,46 +99,47 @@ export function UIElements() {
                             </AlertDialogFooter>
                         </AlertDialogContent>
                     </AlertDialog> */}
-                    <ButtonGroup className="ml-auto">
-                        <Button>
-                            <span className="style-sera:hidden">Button Group</span>
-                            <span className="hidden style-sera:block">Group</span>
-                        </Button>
-                        <DropdownMenu>
-                            <DropdownMenuTrigger
-                                render={
-                                    <Button
+                        <ButtonGroup className="ml-auto">
+                            <Button>
+                                <span className="style-sera:hidden">Button Group</span>
+                                <span className="hidden style-sera:block">Group</span>
+                            </Button>
+                            <DropdownMenu>
+                                <DropdownMenuTrigger
+                                    render={
+                                        <Button
 
 
-                                        aria-label="Open quick actions"
-                                    />
-                                }
-                            >
+                                            aria-label="Open quick actions"
+                                        />
+                                    }
+                                >
 
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end" side="top" className="w-40">
-                                <DropdownMenuGroup>
-                                    <DropdownMenuLabel>Quick Actions</DropdownMenuLabel>
-                                    <DropdownMenuItem>Mute Conversation</DropdownMenuItem>
-                                    <DropdownMenuItem>Mark as Read</DropdownMenuItem>
-                                    <DropdownMenuItem>Block User</DropdownMenuItem>
-                                </DropdownMenuGroup>
-                                <DropdownMenuSeparator />
-                                <DropdownMenuGroup>
-                                    <DropdownMenuItem variant="destructive">
-                                        Delete Conversation
-                                    </DropdownMenuItem>
-                                </DropdownMenuGroup>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
-                    </ButtonGroup>
-                    <Switch
-                        defaultChecked
-                        className="hidden 4xl:flex"
-                        aria-label="Enable advanced setting"
-                    />
-                </div>
-            </CardContent>
-        </Card>
+                                </DropdownMenuTrigger>
+                                <DropdownMenuContent align="end" side="top" className="w-40">
+                                    <DropdownMenuGroup>
+                                        <DropdownMenuLabel>Quick Actions</DropdownMenuLabel>
+                                        <DropdownMenuItem>Mute Conversation</DropdownMenuItem>
+                                        <DropdownMenuItem>Mark as Read</DropdownMenuItem>
+                                        <DropdownMenuItem>Block User</DropdownMenuItem>
+                                    </DropdownMenuGroup>
+                                    <DropdownMenuSeparator />
+                                    <DropdownMenuGroup>
+                                        <DropdownMenuItem variant="destructive">
+                                            Delete Conversation
+                                        </DropdownMenuItem>
+                                    </DropdownMenuGroup>
+                                </DropdownMenuContent>
+                            </DropdownMenu>
+                        </ButtonGroup>
+                        <Switch
+                            defaultChecked
+                            className="hidden 4xl:flex"
+                            aria-label="Enable advanced setting"
+                        />
+                    </div>
+                </CardContent>
+            </Card>
+        </BorderBeam>
     )
 }
