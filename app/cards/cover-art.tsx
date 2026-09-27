@@ -18,7 +18,7 @@ export function CoverArt() {
           htmlFor="cover-art"
           className="text-center text-xs font-normal tracking-wider text-muted-foreground uppercase"
         >
-          Cover Art
+          Обложка
         </Label>
         <Item className="aspect-square" variant="outline">
           <label
@@ -42,12 +42,12 @@ export function CoverArt() {
           render={<label htmlFor="cover-art" className="cursor-pointer" />}
           nativeButton={false}
         >
-          Upload Artwork
+          Загрузить обложку
         </Button>
         <CardDescription className="text-center text-xs">
-          Minimum 3000 × 3000px
+          Минимум 3000 × 3000 px
           <br />
-          JPEG or PNG only
+          Только JPEG или PNG
         </CardDescription>
       </CardFooter>
     </Card>

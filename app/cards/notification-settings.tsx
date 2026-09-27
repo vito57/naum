@@ -23,26 +23,26 @@ import {
 const NOTIFICATIONS = [
   {
     id: "transactions",
-    label: "Transaction alerts",
-    description: "Deposits, withdrawals, and transfers.",
+    label: "Уведомления об операциях",
+    description: "Пополнения, списания и переводы.",
     defaultChecked: true,
   },
   {
     id: "security",
-    label: "Security alerts",
-    description: "Login attempts and account changes.",
+    label: "Оповещения о безопасности",
+    description: "Входы в аккаунт и изменения данных.",
     defaultChecked: true,
   },
   {
     id: "goals",
-    label: "Goal milestones",
-    description: "Updates at 25%, 50%, 75%, and 100%.",
+    label: "Достижение целей",
+    description: "Обновления на 25%, 50%, 75% и 100%.",
     defaultChecked: false,
   },
   {
     id: "market",
-    label: "Market updates",
-    description: "Daily portfolio summary and price alerts.",
+    label: "Обновления рынка",
+    description: "Ежедневная сводка по портфелю и оповещения о ценах.",
     defaultChecked: false,
   },
 ]
@@ -66,9 +66,9 @@ export function NotificationSettings() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Notifications</CardTitle>
+        <CardTitle>Уведомления</CardTitle>
         <CardDescription>
-          Choose what you want to be notified about.
+          Выберите, о чём хотите получать уведомления.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -81,7 +81,7 @@ export function NotificationSettings() {
               onCheckedChange={(v) => handleSelectAll(!!v)}
             />
             <FieldContent>
-              <FieldLabel htmlFor="notify-all">Select all</FieldLabel>
+              <FieldLabel htmlFor="notify-all">Выбрать все</FieldLabel>
             </FieldContent>
           </Field>
           {NOTIFICATIONS.map((n) => (
@@ -100,7 +100,7 @@ export function NotificationSettings() {
         </FieldGroup>
       </CardContent>
       <CardFooter>
-        <Button className="w-full">Save Preferences</Button>
+        <Button className="w-full">Сохранить настройки</Button>
       </CardFooter>
     </Card>
   )

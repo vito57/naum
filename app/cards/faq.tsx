@@ -19,46 +19,46 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const GENERAL_QUESTIONS = [
   {
-    q: "How secure is my financial data with Ledger?",
-    a: "We use bank-level AES-256 encryption, SOC 2 Type II certified infrastructure, and never store your credentials. All connections use read-only access tokens. We are a SEC registered investment advisor.",
+    q: "Насколько безопасны мои финансовые данные в Ledger?",
+    a: "Мы используем банковское шифрование AES-256, инфраструктуру с сертификацией SOC 2 Type II и никогда не храним ваши учётные данные. Все подключения работают через токены доступа только для чтения. Мы — инвестиционный консультант, зарегистрированный в SEC.",
   },
   {
-    q: "How do I connect my bank or investment accounts?",
-    a: "Go to Settings > Linked Accounts and search for your institution. We support over 12,000 banks and brokerages via Plaid and MX.",
+    q: "Как подключить свой банк или инвестиционные счета?",
+    a: "Перейдите в Настройки > Подключённые счета и найдите своё учреждение. Через Plaid и MX мы поддерживаем более 12 000 банков и брокеров.",
   },
   {
-    q: "Can I export my data for tax purposes?",
-    a: "Yes. Navigate to Reports > Tax Export to download a CSV or PDF summary of your transactions, dividends, and capital gains for any tax year.",
+    q: "Можно ли экспортировать данные для налоговой?",
+    a: "Да. Перейдите в Отчёты > Налоговый экспорт, чтобы скачать сводку в формате CSV или PDF по операциям, дивидендам и приросту капитала за любой налоговый год.",
   },
 ]
 
 const BILLING_QUESTIONS = [
   {
-    q: "What is the difference between Basic and Pro pricing tiers?",
-    a: "Basic includes budgeting, goal tracking, and up to 3 linked accounts. Pro adds unlimited accounts, dividend tracking, portfolio analysis, and priority support.",
+    q: "Чем отличаются тарифы Basic и Pro?",
+    a: "Basic включает бюджетирование, отслеживание целей и до 3 подключённых счетов. Pro добавляет неограниченное число счетов, отслеживание дивидендов, анализ портфеля и приоритетную поддержку.",
   },
   {
-    q: "How do I cancel my subscription?",
-    a: "Go to Settings > Billing > Manage Plan and click Cancel. Your access continues until the end of your current billing period.",
+    q: "Как отменить подписку?",
+    a: "Перейдите в Настройки > Оплата > Управление тарифом и нажмите «Отменить». Доступ сохранится до конца текущего периода оплаты.",
   },
   {
-    q: "Do you offer a free trial?",
-    a: "Yes. All new accounts start with a 14-day Pro trial. No credit card required.",
+    q: "Есть ли бесплатный пробный период?",
+    a: "Да. Все новые аккаунты начинают с 14-дневного пробного периода Pro. Банковская карта не требуется.",
   },
 ]
 
 const GOALS_QUESTIONS = [
   {
-    q: "How do I set up a custom financial goal?",
-    a: "Click New Goal from the Savings Targets card. Choose a category, set a target amount and date, and we'll calculate the monthly contribution needed.",
+    q: "Как создать свою финансовую цель?",
+    a: "Нажмите «Новая цель» в карточке «Цели накопления». Выберите категорию, укажите сумму и дату — мы рассчитаем необходимый ежемесячный взнос.",
   },
   {
-    q: "Can I track multiple goals at once?",
-    a: "Yes. Pro accounts can track unlimited goals. Basic accounts support up to 3 active goals.",
+    q: "Можно ли отслеживать несколько целей одновременно?",
+    a: "Да. Аккаунты Pro позволяют отслеживать неограниченное число целей. Аккаунты Basic поддерживают до 3 активных целей.",
   },
   {
-    q: "How are monthly contributions calculated?",
-    a: "We divide the remaining amount by the number of months until your target date, adjusted for your current savings rate and any auto-transfer schedules.",
+    q: "Как рассчитываются ежемесячные взносы?",
+    a: "Мы делим оставшуюся сумму на количество месяцев до целевой даты с учётом вашей текущей нормы накоплений и графика автопереводов.",
   },
 ]
 
@@ -86,13 +86,13 @@ export function Faq() {
         <Tabs defaultValue="general">
           <TabsList className="w-full">
             <TabsTrigger value="general" className="flex-1">
-              General
+              Общее
             </TabsTrigger>
             <TabsTrigger value="billing" className="flex-1">
-              Billing
+              Оплата
             </TabsTrigger>
             <TabsTrigger value="goals" className="flex-1">
-              Goals
+              Цели
             </TabsTrigger>
           </TabsList>
           <TabsContent value="general">
@@ -108,10 +108,10 @@ export function Faq() {
       </CardContent>
       <CardFooter>
         <Button variant="outline" className="w-full">
-          Contact Support
+          Связаться с поддержкой
         </Button>
         <Button variant="link" className="w-full">
-          Learn More
+          Подробнее
         </Button>
       </CardFooter>
     </Card>

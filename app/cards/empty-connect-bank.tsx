@@ -20,14 +20,14 @@ export function EmptyConnectBank() {
             <CreditCardIcon />
           </EmptyMedia>
           <EmptyHeader>
-            <EmptyTitle>Connect Bank</EmptyTitle>
+            <EmptyTitle>Подключить банк</EmptyTitle>
             <EmptyDescription>
-              Link your payout method to receive monthly royalty distributions
-              automatically.
+              Привяжите способ получения выплат, чтобы ежемесячные выплаты
+              гонораров поступали автоматически.
             </EmptyDescription>
           </EmptyHeader>
           <EmptyContent>
-            <Button>Set Up Payouts</Button>
+            <Button>Настроить выплаты</Button>
           </EmptyContent>
         </Empty>
       </CardContent>

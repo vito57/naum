@@ -19,14 +19,14 @@ export function SyncingState() {
             <EmptyMedia variant="icon">
               <Spinner />
             </EmptyMedia>
-            <EmptyTitle>Syncing your accounts</EmptyTitle>
+            <EmptyTitle>Синхронизация аккаунтов</EmptyTitle>
             <EmptyDescription>
-              We&apos;re pulling in your latest transactions. This usually takes
-              a few seconds.
+              Мы загружаем последние операции. Обычно это занимает несколько
+              секунд.
             </EmptyDescription>
           </EmptyHeader>
           <EmptyContent>
-            <Button variant="outline">Cancel</Button>
+            <Button variant="outline">Отмена</Button>
           </EmptyContent>
         </Empty>
       </CardContent>

@@ -20,14 +20,14 @@ export function EmptyExploreCatalog() {
             <AudioLinesIcon />
           </EmptyMedia>
           <EmptyHeader>
-            <EmptyTitle>Explore Catalog</EmptyTitle>
+            <EmptyTitle>Изучить каталог</EmptyTitle>
             <EmptyDescription>
-              Check your ISRC codes, metadata, and visual assets before going
-              live.
+              Проверьте коды ISRC, метаданные и визуальные материалы перед
+              публикацией.
             </EmptyDescription>
           </EmptyHeader>
           <EmptyContent>
-            <Button>View Catalog</Button>
+            <Button>Открыть каталог</Button>
           </EmptyContent>
         </Empty>
       </CardContent>

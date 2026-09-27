@@ -1,3 +1,5 @@
+"use client"
+import BorderBeam from "border-beam"
 import { AccountAccess } from "./cards/account-access"
 import { AlbumCard } from "./cards/album-card"
 import { CardOverview } from "./cards/card-overview"
@@ -35,109 +37,113 @@ import { TransferFunds } from "./cards/transfer-funds"
 import { UpcomingPayments } from "./cards/upcoming-payments"
 export default function Page() {
   return (
-    <div className="bg-slate-100">
-      <div className="container mx-auto pt-8">
-        <div className="breack-inside columns-4 gap-10">
-          <div className="mb-4 break-inside-avoid-column">
-            <AccountAccess />
-          </div>
-          <div className="mb-4 break-inside-avoid-column">
-            <AlbumCard />
-          </div>
-          <div className="mb-4 break-inside-avoid-column">
-            <CardOverview />
-          </div>
-          <div className="mb-4 break-inside-avoid-column">
-            <ClaimableBalance />
-          </div>
-          <div className="mb-4 break-inside-avoid-column">
+    <div className="bg-background">
+      <div className="container mx-auto pt-8 pb-8">
+        <div className=" columns-1 lg:columns-3 gap-6">
+          <div className="mb-6 break-inside-avoid-column">
             <ContributionHistory />
           </div>
-          <div className="mb-4 break-inside-avoid-column">
+          <div className="mb-6 break-inside-avoid-column">
+
+            <AccountAccess />
+
+          </div>
+          <div className="mb-6 break-inside-avoid-column">
+            <AlbumCard />
+          </div>
+          <div className="mb-6 break-inside-avoid-column">
+            <CardOverview />
+          </div>
+          <div className="mb-6 break-inside-avoid-column">
+            <ClaimableBalance />
+          </div>
+
+          <div className="mb-6 break-inside-avoid-column">
             <CoverArt />
           </div>
-          <div className="mb-4 break-inside-avoid-column">
+          <div className="mb-6 break-inside-avoid-column">
             <DividendIncome />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <EmptyConnectBank />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <EmptyDistributeTrack />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <EmptyExploreCatalog />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <Faq />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <FrontDoor />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <IndexInvesting />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <KitchenIsland />
           </div>
-          <div className="mb-4">
-            <LoadingCard />
-          </div>
-          <div className="mb-4">
+
+          <div className="mb-6">
             <NewMilestone />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <NotificationSettings />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <Payments />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <PayoutThreshold />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <PowerUsage />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <Preferences />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <QrConnect />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <ReceivingMethod />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <RecentTransactions />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <ReleaseCatalog />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <RollerShades />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <SavingsProgress />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <SavingsTargets />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <SidebarNav />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <SocialLinks />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <StockPerformance />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <SyncingState />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
+            <LoadingCard />
+          </div>
+          <div className="mb-6">
             <TransferFunds />
           </div>
-          <div className="mb-4">
+          <div className="mb-6">
             <UpcomingPayments />
           </div>
         </div>

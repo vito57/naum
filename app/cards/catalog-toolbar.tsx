@@ -17,16 +17,16 @@ export function CatalogToolbar() {
         <InputGroupAddon>
           <SearchIcon />
         </InputGroupAddon>
-        <InputGroupInput placeholder="Search releases or catalog..." />
+        <InputGroupInput placeholder="Поиск релизов или каталога..." />
       </InputGroup>
       <Button>
         <PlusIcon />
-        Upload New Release
+        Загрузить новый релиз
       </Button>
       <ToggleGroup defaultValue={["releases"]} variant="outline">
-        <ToggleGroupItem value="all-tracks">All Tracks</ToggleGroupItem>
-        <ToggleGroupItem value="releases">Releases</ToggleGroupItem>
-        <ToggleGroupItem value="top-earners">Top Earners</ToggleGroupItem>
+        <ToggleGroupItem value="all-tracks">Все треки</ToggleGroupItem>
+        <ToggleGroupItem value="releases">Релизы</ToggleGroupItem>
+        <ToggleGroupItem value="top-earners">Лидеры по доходу</ToggleGroupItem>
       </ToggleGroup>
     </div>
   )

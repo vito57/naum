@@ -31,7 +31,7 @@ import { XIcon } from "lucide-react"
 const HOLDINGS = [
   {
     name: "Vanguard VIG",
-    shares: "450 Shares",
+    shares: "450 акций",
     amount: "$1,842.10",
     data: [
       { q: "Q1", value: 380 },
@@ -42,7 +42,7 @@ const HOLDINGS = [
   },
   {
     name: "S&P 500 VOO",
-    shares: "112 Shares",
+    shares: "112 акций",
     amount: "$928.40",
     data: [
       { q: "Q1", value: 180 },
@@ -53,7 +53,7 @@ const HOLDINGS = [
   },
   {
     name: "Apple AAPL",
-    shares: "85 Shares",
+    shares: "85 акций",
     amount: "$340.00",
     data: [
       { q: "Q1", value: 60 },
@@ -64,7 +64,7 @@ const HOLDINGS = [
   },
   {
     name: "Realty Income",
-    shares: "320 Shares",
+    shares: "320 акций",
     amount: "$1,139.50",
     data: [
       { q: "Q1", value: 240 },
@@ -77,7 +77,7 @@ const HOLDINGS = [
 
 const miniChartConfig = {
   value: {
-    label: "Dividend",
+    label: "Дивиденды",
     color: "var(--chart-2)",
   },
 } satisfies ChartConfig
@@ -89,9 +89,9 @@ export function DividendIncome() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Q2 Dividend Income</CardTitle>
+        <CardTitle>Дивиденды за II квартал</CardTitle>
         <CardDescription>
-          Quarterly dividend payouts across your portfolio holdings.
+          Квартальные выплаты по дивидендам в вашем портфеле.
         </CardDescription>
         <CardAction>
           <Button variant="ghost" size="icon-sm" className="bg-muted">

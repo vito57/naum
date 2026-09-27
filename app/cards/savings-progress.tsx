@@ -18,11 +18,11 @@ const chartData = [
 
 const chartConfig = {
   saved: {
-    label: "Saved",
+    label: "Накоплено",
     color: "var(--chart-2)",
   },
   remaining: {
-    label: "Remaining",
+    label: "Осталось",
     color: "var(--chart-1)",
   },
 } satisfies ChartConfig
@@ -72,7 +72,7 @@ export function SavingsProgress() {
                           y={(viewBox.cy || 0) + 12}
                           className="fill-muted-foreground text-xs"
                         >
-                          80% of $30,000
+                          80% от $30 000
                         </tspan>
                       </text>
                     )
@@ -86,19 +86,23 @@ export function SavingsProgress() {
       <CardFooter className="flex-col gap-0">
         <div className="flex w-full items-center justify-between py-3">
           <span className="text-sm text-muted-foreground">
-            Projected Finish
+            Ожидаемое завершение
           </span>
-          <span className="text-sm font-semibold">October 2024</span>
+          <span className="text-sm font-semibold">Октябрь 2024</span>
         </div>
         <Separator />
         <div className="flex w-full items-center justify-between py-3">
-          <span className="text-sm text-muted-foreground">Monthly Average</span>
+          <span className="text-sm text-muted-foreground">
+            Среднее в месяц
+          </span>
           <span className="text-sm font-semibold tabular-nums">$1,250</span>
         </div>
         <Separator />
         <div className="flex w-full items-center justify-between py-3">
-          <span className="text-sm text-muted-foreground">Top Contributor</span>
-          <span className="text-sm font-semibold">Auto-Transfer</span>
+          <span className="text-sm text-muted-foreground">
+            Основной источник
+          </span>
+          <span className="text-sm font-semibold">Автоперевод</span>
         </div>
       </CardFooter>
     </Card>

@@ -33,11 +33,11 @@ export function RecentTransactions() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Recent Transactions</CardTitle>
-        <CardDescription>Your latest account activity.</CardDescription>
+        <CardTitle>Последние операции</CardTitle>
+        <CardDescription>Последние операции в вашем аккаунте.</CardDescription>
         <CardAction>
           <Button variant="outline" size="sm">
-            View All
+            Смотреть все
           </Button>
         </CardAction>
       </CardHeader>
@@ -54,12 +54,12 @@ export function RecentTransactions() {
                 <div className="flex flex-col">
                   <span className="font-medium">Blue Bottle Coffee</span>
                   <span className="text-sm text-muted-foreground">
-                    Food & Drink
+                    Еда и напитки
                   </span>
                 </div>
               </TableCell>
               <TableCell className="text-sm text-muted-foreground">
-                Today, 10:24 AM
+                Сегодня, 10:24
               </TableCell>
               <TableCell className="text-right">
                 <span className="text-sm font-semibold tabular-nums">
@@ -74,11 +74,11 @@ export function RecentTransactions() {
                     <MoreHorizontalIcon />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem>View details</DropdownMenuItem>
-                    <DropdownMenuItem>Add note</DropdownMenuItem>
-                    <DropdownMenuItem>Categorize</DropdownMenuItem>
+                    <DropdownMenuItem>Подробнее</DropdownMenuItem>
+                    <DropdownMenuItem>Добавить заметку</DropdownMenuItem>
+                    <DropdownMenuItem>Категоризировать</DropdownMenuItem>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>Dispute</DropdownMenuItem>
+                    <DropdownMenuItem>Оспорить</DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </TableCell>
@@ -93,12 +93,12 @@ export function RecentTransactions() {
                 <div className="flex flex-col">
                   <span className="font-medium">Whole Foods Market</span>
                   <span className="text-sm text-muted-foreground">
-                    Groceries
+                    Продукты
                   </span>
                 </div>
               </TableCell>
               <TableCell className="text-sm text-muted-foreground">
-                Yesterday
+                Вчера
               </TableCell>
               <TableCell className="text-right">
                 <span className="text-sm font-semibold tabular-nums">
@@ -113,11 +113,11 @@ export function RecentTransactions() {
                     <MoreHorizontalIcon />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem>View details</DropdownMenuItem>
-                    <DropdownMenuItem>Add note</DropdownMenuItem>
-                    <DropdownMenuItem>Categorize</DropdownMenuItem>
+                    <DropdownMenuItem>Подробнее</DropdownMenuItem>
+                    <DropdownMenuItem>Добавить заметку</DropdownMenuItem>
+                    <DropdownMenuItem>Категоризировать</DropdownMenuItem>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>Dispute</DropdownMenuItem>
+                    <DropdownMenuItem>Оспорить</DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </TableCell>
@@ -130,12 +130,12 @@ export function RecentTransactions() {
               </TableCell>
               <TableCell>
                 <div className="flex flex-col">
-                  <span className="font-medium">Stripe Payout</span>
-                  <span className="text-sm text-muted-foreground">Income</span>
+                  <span className="font-medium">Выплата Stripe</span>
+                  <span className="text-sm text-muted-foreground">Доход</span>
                 </div>
               </TableCell>
               <TableCell className="text-sm text-muted-foreground">
-                Oct 12
+                12 окт.
               </TableCell>
               <TableCell className="text-right">
                 <span className="text-sm font-semibold text-emerald-500 tabular-nums">
@@ -150,11 +150,11 @@ export function RecentTransactions() {
                     <MoreHorizontalIcon />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem>View details</DropdownMenuItem>
-                    <DropdownMenuItem>Add note</DropdownMenuItem>
-                    <DropdownMenuItem>Categorize</DropdownMenuItem>
+                    <DropdownMenuItem>Подробнее</DropdownMenuItem>
+                    <DropdownMenuItem>Добавить заметку</DropdownMenuItem>
+                    <DropdownMenuItem>Категоризировать</DropdownMenuItem>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>Dispute</DropdownMenuItem>
+                    <DropdownMenuItem>Оспорить</DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </TableCell>
@@ -169,12 +169,12 @@ export function RecentTransactions() {
                 <div className="flex flex-col">
                   <span className="font-medium">Uber Technologies</span>
                   <span className="text-sm text-muted-foreground">
-                    Transport
+                    Транспорт
                   </span>
                 </div>
               </TableCell>
               <TableCell className="text-sm text-muted-foreground">
-                Oct 11
+                11 окт.
               </TableCell>
               <TableCell className="text-right">
                 <span className="text-sm font-semibold tabular-nums">
@@ -189,11 +189,11 @@ export function RecentTransactions() {
                     <MoreHorizontalIcon />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem>View details</DropdownMenuItem>
-                    <DropdownMenuItem>Add note</DropdownMenuItem>
-                    <DropdownMenuItem>Categorize</DropdownMenuItem>
+                    <DropdownMenuItem>Подробнее</DropdownMenuItem>
+                    <DropdownMenuItem>Добавить заметку</DropdownMenuItem>
+                    <DropdownMenuItem>Категоризировать</DropdownMenuItem>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>Dispute</DropdownMenuItem>
+                    <DropdownMenuItem>Оспорить</DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </TableCell>
@@ -206,14 +206,14 @@ export function RecentTransactions() {
               </TableCell>
               <TableCell>
                 <div className="flex flex-col">
-                  <span className="font-medium">Netflix Subscription</span>
+                  <span className="font-medium">Подписка Netflix</span>
                   <span className="text-sm text-muted-foreground">
-                    Entertainment
+                    Развлечения
                   </span>
                 </div>
               </TableCell>
               <TableCell className="text-sm text-muted-foreground">
-                Oct 10
+                10 окт.
               </TableCell>
               <TableCell className="text-right">
                 <span className="text-sm font-semibold tabular-nums">
@@ -228,11 +228,11 @@ export function RecentTransactions() {
                     <MoreHorizontalIcon />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem>View details</DropdownMenuItem>
-                    <DropdownMenuItem>Add note</DropdownMenuItem>
-                    <DropdownMenuItem>Categorize</DropdownMenuItem>
+                    <DropdownMenuItem>Подробнее</DropdownMenuItem>
+                    <DropdownMenuItem>Добавить заметку</DropdownMenuItem>
+                    <DropdownMenuItem>Категоризировать</DropdownMenuItem>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>Dispute</DropdownMenuItem>
+                    <DropdownMenuItem>Оспорить</DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </TableCell>

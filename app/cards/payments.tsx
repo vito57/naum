@@ -42,7 +42,7 @@ export function Payments() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="#">Home</BreadcrumbLink>
+              <BreadcrumbLink href="#">Главная</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -51,20 +51,20 @@ export function Payments() {
                   render={<Button size="icon-sm" variant="ghost" />}
                 >
                   <MoreHorizontalIcon />
-                  <span className="sr-only">Account options</span>
+                  <span className="sr-only">Параметры аккаунта</span>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="start">
                   <DropdownMenuGroup>
-                    <DropdownMenuItem>Profile</DropdownMenuItem>
-                    <DropdownMenuItem>Statements</DropdownMenuItem>
-                    <DropdownMenuItem>Documents</DropdownMenuItem>
+                    <DropdownMenuItem>Профиль</DropdownMenuItem>
+                    <DropdownMenuItem>Выписки</DropdownMenuItem>
+                    <DropdownMenuItem>Документы</DropdownMenuItem>
                   </DropdownMenuGroup>
                 </DropdownMenuContent>
               </DropdownMenu>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>Payments</BreadcrumbPage>
+              <BreadcrumbPage>Платежи</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -76,9 +76,9 @@ export function Payments() {
               <GaugeIcon />
             </ItemMedia>
             <ItemContent>
-              <ItemTitle>Change transfer limit</ItemTitle>
+              <ItemTitle>Изменить лимит перевода</ItemTitle>
               <ItemDescription>
-                Adjust how much you can send from your balance.
+                Настройте, сколько можно отправить с вашего баланса.
               </ItemDescription>
             </ItemContent>
             <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
@@ -88,9 +88,9 @@ export function Payments() {
               <CalendarIcon />
             </ItemMedia>
             <ItemContent>
-              <ItemTitle>Scheduled transfers</ItemTitle>
+              <ItemTitle>Запланированные переводы</ItemTitle>
               <ItemDescription>
-                Set up a transfer to send at a later date.
+                Назначьте перевод на более позднюю дату.
               </ItemDescription>
             </ItemContent>
             <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
@@ -100,9 +100,9 @@ export function Payments() {
               <RepeatIcon />
             </ItemMedia>
             <ItemContent>
-              <ItemTitle>Direct Debits</ItemTitle>
+              <ItemTitle>Прямые списания</ItemTitle>
               <ItemDescription>
-                Set up and manage regular payments.
+                Настройте регулярные платежи и управляйте ими.
               </ItemDescription>
             </ItemContent>
             <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
@@ -112,9 +112,9 @@ export function Payments() {
               <RefreshCwIcon />
             </ItemMedia>
             <ItemContent>
-              <ItemTitle>Recurring card payments</ItemTitle>
+              <ItemTitle>Повторяющиеся платежи по карте</ItemTitle>
               <ItemDescription>
-                Manage your repeated card transactions.
+                Управляйте повторяющимися операциями по карте.
               </ItemDescription>
             </ItemContent>
             <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />

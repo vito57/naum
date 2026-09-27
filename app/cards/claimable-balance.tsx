@@ -14,11 +14,11 @@ export function ClaimableBalance() {
   return (
     <Card>
       <CardHeader>
-        <CardDescription>Claimable Balance</CardDescription>
+        <CardDescription>Доступно к выплате</CardDescription>
         <CardTitle className="text-5xl tabular-nums">$0.00</CardTitle>
         <Badge variant="outline">
           <span className="size-2 rounded-full bg-yellow-500" />
-          Pending Setup
+          Ожидает настройки
         </Badge>
       </CardHeader>
       <CardContent className="flex flex-1 flex-col justify-end">
@@ -26,20 +26,20 @@ export function ClaimableBalance() {
           <ItemContent className="gap-3">
             <div className="flex items-center justify-between">
               <span className="text-sm text-muted-foreground">
-                Net Royalties
+                Чистые гонорары
               </span>
               <span className="text-sm font-medium tabular-nums">$0.00</span>
             </div>
             <div className="flex items-center justify-between">
               <span className="text-sm text-muted-foreground">
-                Processing Fee
+                Комиссия за обработку
               </span>
               <span className="text-sm font-medium tabular-nums">-$0.00</span>
             </div>
             <Separator />
             <div className="flex items-center justify-between">
               <span className="text-sm text-muted-foreground">
-                Total Ready to Claim
+                Всего к получению
               </span>
               <span className="text-sm font-semibold tabular-nums">
                 $0.00 USD
@@ -50,8 +50,8 @@ export function ClaimableBalance() {
       </CardContent>
       <CardFooter>
         <CardDescription>
-          Once your bank is connected, balances over $10.00 are automatically
-          eligible for monthly distribution on the 15th of each month.
+          После подключения банка остатки свыше $10.00 автоматически
+          участвуют в ежемесячных выплатах 15-го числа каждого месяца.
         </CardDescription>
       </CardFooter>
     </Card>

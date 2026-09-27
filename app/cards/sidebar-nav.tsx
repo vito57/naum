@@ -43,37 +43,37 @@ export function SidebarNav() {
           <Sidebar collapsible="none" className="w-full bg-transparent">
             <SidebarContent className="gap-0">
               <SidebarGroup className="pb-1">
-                <SidebarGroupLabel>Overview</SidebarGroupLabel>
+                <SidebarGroupLabel>Обзор</SidebarGroupLabel>
                 <SidebarGroupContent>
                   <SidebarMenu>
                     <SidebarMenuItem>
                       <SidebarMenuButton isActive>
                         <LayoutDashboardIcon />
-                        Dashboard
+                        Панель
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <ArrowLeftRightIcon />
-                        Transactions
+                        Операции
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <TrendingUpIcon />
-                        Investments
+                        Инвестиции
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <Building2Icon />
-                        Accounts
+                        Счета
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <PieChartIcon />
-                        Spending
+                        Расходы
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                   </SidebarMenu>
@@ -81,31 +81,31 @@ export function SidebarNav() {
               </SidebarGroup>
               <SidebarSeparator className="w-auto!" />
               <SidebarGroup className="pt-1">
-                <SidebarGroupLabel>Planning</SidebarGroupLabel>
+                <SidebarGroupLabel>Планирование</SidebarGroupLabel>
                 <SidebarGroupContent>
                   <SidebarMenu>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <TargetIcon />
-                        Goals
+                        Цели
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <WalletIcon />
-                        Budget
+                        Бюджет
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <FileBarChartIcon />
-                        Reports
+                        Отчёты
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <FileTextIcon />
-                        Documents
+                        Документы
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                   </SidebarMenu>
@@ -120,37 +120,37 @@ export function SidebarNav() {
           <Sidebar collapsible="none" className="w-full bg-transparent">
             <SidebarContent className="gap-0">
               <SidebarGroup className="pb-1">
-                <SidebarGroupLabel>Account</SidebarGroupLabel>
+                <SidebarGroupLabel>Аккаунт</SidebarGroupLabel>
                 <SidebarGroupContent>
                   <SidebarMenu>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <UserIcon />
-                        Profile
+                        Профиль
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton isActive>
                         <CreditCardIcon />
-                        Billing
+                        Оплата
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <BellIcon />
-                        Notifications
+                        Уведомления
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <ShieldIcon />
-                        Security
+                        Безопасность
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <PaintbrushIcon />
-                        Appearance
+                        Оформление
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                   </SidebarMenu>
@@ -158,31 +158,31 @@ export function SidebarNav() {
               </SidebarGroup>
               <SidebarSeparator className="w-auto!" />
               <SidebarGroup className="pt-1">
-                <SidebarGroupLabel>Support</SidebarGroupLabel>
+                <SidebarGroupLabel>Поддержка</SidebarGroupLabel>
                 <SidebarGroupContent>
                   <SidebarMenu>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <CircleHelpIcon />
-                        Help Center
+                        Центр помощи
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <MessageSquareIcon />
-                        Contact Us
+                        Связаться с нами
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <BookOpenIcon />
-                        Documentation
+                        Документация
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                     <SidebarMenuItem>
                       <SidebarMenuButton>
                         <ActivityIcon />
-                        Status
+                        Статус сервисов
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                   </SidebarMenu>

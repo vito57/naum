@@ -32,10 +32,10 @@ import { XIcon } from "lucide-react"
 // import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"
 
 const CURRENCIES = [
-  { label: "USD — United States Dollar", value: "usd" },
-  { label: "EUR — Euro", value: "eur" },
-  { label: "GBP — British Pound", value: "gbp" },
-  { label: "JPY — Japanese Yen", value: "jpy" },
+  { label: "USD — Доллар США", value: "usd" },
+  { label: "EUR — Евро", value: "eur" },
+  { label: "GBP — Фунт стерлингов", value: "gbp" },
+  { label: "JPY — Японская иена", value: "jpy" },
 ]
 
 export function PayoutThreshold() {
@@ -44,9 +44,9 @@ export function PayoutThreshold() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Payout Threshold</CardTitle>
+        <CardTitle>Порог выплаты</CardTitle>
         <CardDescription>
-          Set the minimum balance required before a payout is triggered.
+          Укажите минимальный остаток, при котором запускается выплата.
         </CardDescription>
         <CardAction>
           <Button variant="ghost" size="icon-sm" className="bg-muted">
@@ -58,7 +58,7 @@ export function PayoutThreshold() {
         <FieldGroup>
           <Field>
             <FieldLabel htmlFor="preferred-currency">
-              Preferred Currency
+              Предпочитаемая валюта
             </FieldLabel>
             <Select items={CURRENCIES} defaultValue="usd">
               <SelectTrigger id="preferred-currency" className="w-full">
@@ -78,7 +78,7 @@ export function PayoutThreshold() {
           <Field>
             <div className="flex items-baseline justify-between">
               <FieldLabel htmlFor="min-payout">
-                Minimum Payout Amount
+                Минимальная сумма выплаты
               </FieldLabel>
               <span className="text-2xl font-semibold tabular-nums">
                 ${amount[0].toFixed(2)}
@@ -95,22 +95,22 @@ export function PayoutThreshold() {
               step={50}
             />
             <div className="flex items-center justify-between">
-              <FieldDescription>$50 (MIN)</FieldDescription>
-              <FieldDescription>$10,000 (MAX)</FieldDescription>
+              <FieldDescription>$50 (МИН)</FieldDescription>
+              <FieldDescription>$10 000 (МАКС)</FieldDescription>
             </div>
           </Field>
           <Field>
-            <FieldLabel htmlFor="payout-notes">Notes</FieldLabel>
+            <FieldLabel htmlFor="payout-notes">Примечания</FieldLabel>
             <Textarea
               id="payout-notes"
-              placeholder="Add any notes for this payout configuration..."
+              placeholder="Добавьте примечания к этой конфигурации выплат..."
               className="min-h-[100px]"
             />
           </Field>
         </FieldGroup>
       </CardContent>
       <CardFooter>
-        <Button className="w-full">Save Threshold</Button>
+        <Button className="w-full">Сохранить порог</Button>
       </CardFooter>
     </Card>
   )

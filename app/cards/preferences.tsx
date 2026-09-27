@@ -29,19 +29,19 @@ import { XIcon } from "lucide-react"
 // import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"
 
 const CURRENCIES = [
-  { label: "USD — United States Dollar", value: "usd" },
-  { label: "EUR — Euro", value: "eur" },
-  { label: "GBP — British Pound", value: "gbp" },
-  { label: "JPY — Japanese Yen", value: "jpy" },
+  { label: "USD — Доллар США", value: "usd" },
+  { label: "EUR — Евро", value: "eur" },
+  { label: "GBP — Фунт стерлингов", value: "gbp" },
+  { label: "JPY — Японская иена", value: "jpy" },
 ]
 
 export function Preferences() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Preferences</CardTitle>
+        <CardTitle>Настройки</CardTitle>
         <CardDescription>
-          Manage your account settings and notifications.
+          Управляйте настройками аккаунта и уведомлениями.
         </CardDescription>
         <CardAction>
           <Button variant="ghost" size="icon-sm" className="bg-muted">
@@ -52,7 +52,9 @@ export function Preferences() {
       <CardContent>
         <FieldGroup>
           <Field>
-            <FieldLabel htmlFor="default-currency">Default Currency</FieldLabel>
+            <FieldLabel htmlFor="default-currency">
+              Валюта по умолчанию
+            </FieldLabel>
             <Select items={CURRENCIES} defaultValue="usd">
               <SelectTrigger id="default-currency" className="w-full">
                 <SelectValue />
@@ -72,11 +74,10 @@ export function Preferences() {
           <Field orientation="horizontal">
             <FieldContent>
               <FieldLabel htmlFor="public-statistics">
-                Public Statistics
+                Публичная статистика
               </FieldLabel>
               <FieldDescription>
-                Allow others to see your total stream count and listening
-                activity
+                Разрешить другим видеть общее число прослушиваний и активность
               </FieldDescription>
             </FieldContent>
             <Switch id="public-statistics" defaultChecked />
@@ -85,10 +86,10 @@ export function Preferences() {
           <Field orientation="horizontal">
             <FieldContent>
               <FieldLabel htmlFor="email-notifications">
-                Email Notifications
+                Уведомления по электронной почте
               </FieldLabel>
               <FieldDescription>
-                Monthly royalty reports and distribution updates
+                Ежемесячные отчёты по гонорарам и обновления выплат
               </FieldDescription>
             </FieldContent>
             <Switch id="email-notifications" defaultChecked />
@@ -96,8 +97,8 @@ export function Preferences() {
         </FieldGroup>
       </CardContent>
       <CardFooter>
-        <Button variant="outline">Reset</Button>
-        <Button className="ml-auto">Save Preferences</Button>
+        <Button variant="outline">Сбросить</Button>
+        <Button className="ml-auto">Сохранить настройки</Button>
       </CardFooter>
     </Card>
   )

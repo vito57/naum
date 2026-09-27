@@ -13,9 +13,9 @@ export function IndexInvesting() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Dollar-Cost Averaging</CardTitle>
+        <CardTitle>Усреднение по стоимости</CardTitle>
         <CardDescription>
-          A strategy for building wealth over time.
+          Стратегия накопления капитала с течением времени.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -24,12 +24,12 @@ export function IndexInvesting() {
             href="#"
             className="underline underline-offset-4 hover:text-primary"
           >
-            Over time
+            Со временем
           </a>
-          , this smooths out the average cost of your investments. When prices
-          drop, your fixed amount buys more shares. When prices rise, you buy
-          fewer. The result is a lower average cost per share compared to
-          lump-sum investing during volatile periods.
+          , это сглаживает среднюю стоимость ваших инвестиций. Когда цены
+          снижаются, ваша фиксированная сумма покупает больше акций. Когда цены
+          растут — меньше. В результате средняя стоимость одной акции оказывается
+          ниже, чем при единовременном вложении в периоды волатильности.
         </CardDescription>
       </CardContent>
     </Card>

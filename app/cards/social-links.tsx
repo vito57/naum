@@ -19,12 +19,12 @@ export function SocialLinks() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Social Links</CardTitle>
+        <CardTitle>Ссылки на соцсети</CardTitle>
       </CardHeader>
       <CardContent>
         <FieldGroup>
           <Field>
-            <FieldLabel htmlFor="spotify-url">Spotify Artist URL</FieldLabel>
+            <FieldLabel htmlFor="spotify-url">Ссылка на Spotify</FieldLabel>
             <InputGroup>
               <InputGroupAddon>
                 <CirclePlusIcon />
@@ -36,7 +36,7 @@ export function SocialLinks() {
             </InputGroup>
           </Field>
           <Field>
-            <FieldLabel htmlFor="instagram-handle">Instagram Handle</FieldLabel>
+            <FieldLabel htmlFor="instagram-handle">Имя в Instagram</FieldLabel>
             <InputGroup>
               <InputGroupAddon>
                 <CameraIcon />
@@ -48,7 +48,7 @@ export function SocialLinks() {
             </InputGroup>
           </Field>
           <Field>
-            <FieldLabel htmlFor="soundcloud-url">SoundCloud URL</FieldLabel>
+            <FieldLabel htmlFor="soundcloud-url">Ссылка на SoundCloud</FieldLabel>
             <InputGroup>
               <InputGroupAddon>
                 <CloudIcon />
@@ -60,7 +60,7 @@ export function SocialLinks() {
             </InputGroup>
           </Field>
           <Field>
-            <FieldLabel htmlFor="website-url">Website</FieldLabel>
+            <FieldLabel htmlFor="website-url">Веб-сайт</FieldLabel>
             <InputGroup>
               <InputGroupAddon>
                 <GlobeIcon />
@@ -75,9 +75,9 @@ export function SocialLinks() {
       </CardContent>
       <CardFooter className="style-sera:justify-center justify-end gap-2">
         <Button variant="secondary" className="style-sera:flex-1">
-          Discard
+          Отменить
         </Button>
-        <Button className="style-sera:flex-1">Save Changes</Button>
+        <Button className="style-sera:flex-1">Сохранить изменения</Button>
       </CardFooter>
     </Card>
   )

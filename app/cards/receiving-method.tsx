@@ -29,8 +29,8 @@ export function ReceivingMethod() {
   return (
     <Card>
       <CardHeader>
-        <CardDescription>Payout Preferences</CardDescription>
-        <CardTitle>Receiving Method</CardTitle>
+        <CardDescription>Настройки выплат</CardDescription>
+        <CardTitle>Способ получения</CardTitle>
         <CardAction>
           <Button variant="ghost" size="icon-sm" className="bg-muted">
             <XIcon />
@@ -41,7 +41,7 @@ export function ReceivingMethod() {
         <FieldGroup>
           <Field>
             <FieldLabel htmlFor="account-holder">
-              Account Holder Name
+              Имя владельца счёта
             </FieldLabel>
             <Input
               id="account-holder"
@@ -49,7 +49,7 @@ export function ReceivingMethod() {
             />
           </Field>
           <FieldSet>
-            <FieldLegend variant="label">Receiving Method</FieldLegend>
+            <FieldLegend variant="label">Способ получения</FieldLegend>
             <RadioGroup
               defaultValue="bank"
               className="style-sera:grid-cols-1 grid grid-cols-1 items-start gap-3 md:grid-cols-2"
@@ -58,7 +58,7 @@ export function ReceivingMethod() {
                 <Field orientation="horizontal" className="pb-2.5">
                   <RadioGroupItem value="bank" id="method-bank" />
                   <FieldContent>
-                    <FieldTitle>Bank Transfer</FieldTitle>
+                    <FieldTitle>Банковский перевод</FieldTitle>
                     <FieldDescription>SWIFT / IBAN</FieldDescription>
                   </FieldContent>
                 </Field>
@@ -69,7 +69,7 @@ export function ReceivingMethod() {
                   <FieldContent>
                     <FieldTitle>PayPal</FieldTitle>
                     <FieldDescription className="line-clamp-1">
-                      Instant Payout
+                      Мгновенная выплата
                     </FieldDescription>
                   </FieldContent>
                 </Field>
@@ -77,14 +77,14 @@ export function ReceivingMethod() {
             </RadioGroup>
           </FieldSet>
           <Field>
-            <FieldLabel htmlFor="iban">IBAN / Account Number</FieldLabel>
+            <FieldLabel htmlFor="iban">IBAN / Номер счёта</FieldLabel>
             <Input id="iban" placeholder="DE89 3704 0044 ...." />
           </Field>
         </FieldGroup>
       </CardContent>
       <CardFooter>
         <Button className="w-full" disabled>
-          Save Payout Settings
+          Сохранить настройки выплат
         </Button>
       </CardFooter>
     </Card>

@@ -44,29 +44,29 @@ export function CardOverview() {
     <div className="grid grid-cols-2 gap-3">
       <Card>
         <CardContent>
-          <CardDescription>Card Balance</CardDescription>
+          <CardDescription>Баланс карты</CardDescription>
           <CardTitle className="text-2xl tabular-nums">US$12.94</CardTitle>
           <CardDescription className="tabular-nums">
-            US$11,337.06 Available
+            Доступно US$11,337.06
           </CardDescription>
         </CardContent>
       </Card>
       <Card className="flex flex-col justify-between">
         <CardContent className="flex flex-1 flex-col justify-between">
           <div className="flex flex-col gap-1">
-            <CardDescription>Payment Due</CardDescription>
-            <CardTitle className="text-2xl">1 Apr</CardTitle>
+            <CardDescription>Платёж к оплате</CardDescription>
+            <CardTitle className="text-2xl">1 апр.</CardTitle>
           </div>
           <Button variant="outline" size="sm" className="mt-3 w-full">
-            Pay Early
+            Оплатить заранее
           </Button>
         </CardContent>
       </Card>
       <Card className="col-span-2">
         <CardContent className="flex flex-col gap-2">
           <div className="flex items-center justify-between">
-            <CardDescription>Yearly Activity</CardDescription>
-            <Badge variant="secondary">+US$0.25 Daily Cash</Badge>
+            <CardDescription>Активность за год</CardDescription>
+            <Badge variant="secondary">+US$0.25 ежедневно</Badge>
           </div>
           <ChartContainer config={chartConfig} className="h-20 w-full">
             <BarChart

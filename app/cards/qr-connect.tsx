@@ -25,14 +25,15 @@ export function QrConnect() {
         </div>
       </CardContent>
       <CardHeader className="text-center">
-        <CardTitle>Scan to connect your mobile device</CardTitle>
+        <CardTitle>Отсканируйте, чтобы подключить мобильное устройство</CardTitle>
         <CardDescription>
-          Open the Ledger mobile app and scan this code to link your device.
+          Откройте мобильное приложение Ledger и отсканируйте этот код, чтобы
+          связать устройство.
         </CardDescription>
       </CardHeader>
       <CardFooter>
         <Button variant="secondary" className="w-full">
-          Got it
+          Понятно
         </Button>
       </CardFooter>
     </Card>

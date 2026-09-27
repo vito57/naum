@@ -26,9 +26,9 @@ export function UpcomingPayments() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Upcoming Payments</CardTitle>
+        <CardTitle>Предстоящие платежи</CardTitle>
         <CardDescription>
-          Select a date to view scheduled payments.
+          Выберите дату, чтобы посмотреть запланированные платежи.
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
@@ -43,22 +43,22 @@ export function UpcomingPayments() {
         <ItemGroup className="w-full">
           <Item variant="muted">
             <ItemContent>
-              <ItemTitle>Netflix Subscription</ItemTitle>
-              <ItemDescription>Apr 15, 2024</ItemDescription>
+              <ItemTitle>Подписка Netflix</ItemTitle>
+              <ItemDescription>15 апр. 2024</ItemDescription>
             </ItemContent>
             <Badge variant="secondary">$19.99</Badge>
           </Item>
           <Item variant="muted">
             <ItemContent>
-              <ItemTitle>Rent Payment</ItemTitle>
-              <ItemDescription>Apr 1, 2024</ItemDescription>
+              <ItemTitle>Аренда</ItemTitle>
+              <ItemDescription>1 апр. 2024</ItemDescription>
             </ItemContent>
             <Badge variant="secondary">$2,400.00</Badge>
           </Item>
           <Item variant="muted">
             <ItemContent>
-              <ItemTitle>Auto Insurance</ItemTitle>
-              <ItemDescription>Apr 22, 2024</ItemDescription>
+              <ItemTitle>Автострахование</ItemTitle>
+              <ItemDescription>22 апр. 2024</ItemDescription>
             </ItemContent>
             <Badge variant="secondary">$186.00</Badge>
           </Item>

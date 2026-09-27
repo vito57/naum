@@ -31,35 +31,35 @@ const TICKERS = ["VOO", "VIG", "AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"]
 
 const CHART_DATA: Record<string, { month: string; price: number }[]> = {
   VOO: [
-    { month: "Jan", price: 412 },
-    { month: "Feb", price: 438 },
-    { month: "Mar", price: 395 },
-    { month: "Apr", price: 450 },
-    { month: "May", price: 420 },
-    { month: "Jun", price: 462 },
+    { month: "Янв", price: 412 },
+    { month: "Фев", price: 438 },
+    { month: "Мар", price: 395 },
+    { month: "Апр", price: 450 },
+    { month: "Май", price: 420 },
+    { month: "Июнь", price: 462 },
   ],
   AAPL: [
-    { month: "Jan", price: 185 },
-    { month: "Feb", price: 210 },
-    { month: "Mar", price: 172 },
-    { month: "Apr", price: 198 },
-    { month: "May", price: 178 },
-    { month: "Jun", price: 215 },
+    { month: "Янв", price: 185 },
+    { month: "Фев", price: 210 },
+    { month: "Мар", price: 172 },
+    { month: "Апр", price: 198 },
+    { month: "Май", price: 178 },
+    { month: "Июнь", price: 215 },
   ],
 }
 
 const DEFAULT_DATA = [
-  { month: "Jan", price: 100 },
-  { month: "Feb", price: 118 },
-  { month: "Mar", price: 95 },
-  { month: "Apr", price: 125 },
-  { month: "May", price: 108 },
-  { month: "Jun", price: 130 },
+  { month: "Янв", price: 100 },
+  { month: "Фев", price: 118 },
+  { month: "Мар", price: 95 },
+  { month: "Апр", price: 125 },
+  { month: "Май", price: 108 },
+  { month: "Июнь", price: 130 },
 ]
 
 const chartConfig = {
   price: {
-    label: "Price",
+    label: "Цена",
     color: "var(--chart-1)",
   },
 } satisfies ChartConfig
@@ -72,13 +72,13 @@ export function StockPerformance() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Stock Performance</CardTitle>
-        <CardDescription>6-month price history.</CardDescription>
+        <CardTitle>Динамика акции</CardTitle>
+        <CardDescription>История цены за 6 месяцев.</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         <FieldGroup>
           <Field>
-            <FieldLabel htmlFor="ticker-select">Ticker</FieldLabel>
+            <FieldLabel htmlFor="ticker-select">Тикер</FieldLabel>
             <Combobox
               items={TICKERS}
               value={ticker}
@@ -88,10 +88,10 @@ export function StockPerformance() {
             >
               <ComboboxInput
                 id="ticker-select"
-                placeholder="Search ticker..."
+                placeholder="Поиск тикера..."
               />
               <ComboboxContent>
-                <ComboboxEmpty>No tickers found.</ComboboxEmpty>
+                <ComboboxEmpty>Тикеры не найдены.</ComboboxEmpty>
                 <ComboboxList>
                   {(item) => (
                     <ComboboxItem key={item} value={item}>

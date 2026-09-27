@@ -52,15 +52,15 @@ export function KitchenIsland() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Kitchen Island</CardTitle>
-        <CardDescription>Hue Color Ambient</CardDescription>
+        <CardTitle>Кухонный остров</CardTitle>
+        <CardDescription>Цветная подсветка Hue</CardDescription>
         <CardAction>
           <Switch checked={enabled} onCheckedChange={setEnabled} />
         </CardAction>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         <div className="flex flex-col gap-2">
-          <span className="sr-only">Scenes</span>
+          <span className="sr-only">Сценарии</span>
           <ToggleGroup
             value={[scene]}
             onValueChange={(value) => handleSceneChange(value[0] ?? "cooking")}
@@ -69,16 +69,16 @@ export function KitchenIsland() {
             className="flex-wrap"
           >
             <ToggleGroupItem value="cooking" disabled={!enabled}>
-              Cooking
+              Готовка
             </ToggleGroupItem>
             <ToggleGroupItem value="dining" disabled={!enabled}>
-              Dining
+              Ужин
             </ToggleGroupItem>
             <ToggleGroupItem value="nightlight" disabled={!enabled}>
-              Nightlight
+              Ночник
             </ToggleGroupItem>
             <ToggleGroupItem value="focus" disabled={!enabled}>
-              Focus
+              Фокус
             </ToggleGroupItem>
           </ToggleGroup>
         </div>
@@ -88,7 +88,7 @@ export function KitchenIsland() {
               <SunIcon />
             </ItemMedia>
             <ItemContent className="flex-row items-center gap-3">
-              <ItemTitle className="shrink-0">Brightness</ItemTitle>
+              <ItemTitle className="shrink-0">Яркость</ItemTitle>
             </ItemContent>
             <ItemActions className="flex-1">
               <Slider
@@ -107,7 +107,7 @@ export function KitchenIsland() {
               <ThermometerIcon />
             </ItemMedia>
             <ItemContent className="flex-row items-center gap-3">
-              <ItemTitle className="shrink-0">Color Temp</ItemTitle>
+              <ItemTitle className="shrink-0">Цветовая температура</ItemTitle>
             </ItemContent>
             <ItemActions className="flex-1">
               <Slider
@@ -125,7 +125,7 @@ export function KitchenIsland() {
               <Volume2Icon />
             </ItemMedia>
             <ItemContent className="flex-row items-center gap-3">
-              <ItemTitle className="shrink-0">Volume</ItemTitle>
+              <ItemTitle className="shrink-0">Громкость</ItemTitle>
             </ItemContent>
             <ItemActions className="flex-1">
               <Slider
@@ -143,7 +143,7 @@ export function KitchenIsland() {
               <TimerIcon />
             </ItemMedia>
             <ItemContent className="flex-row items-center gap-3">
-              <ItemTitle className="shrink-0">Fade</ItemTitle>
+              <ItemTitle className="shrink-0">Затухание</ItemTitle>
             </ItemContent>
             <ItemActions className="flex-1">
               <Slider

@@ -29,22 +29,22 @@ import { XIcon } from "lucide-react"
 // import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"
 
 const FROM_ACCOUNTS = [
-  { label: "Main Checking (··8402) — $12,450.00", value: "checking" },
-  { label: "Business (··7731) — $8,920.00", value: "business" },
+  { label: "Основной текущий (··8402) — $12,450.00", value: "checking" },
+  { label: "Бизнес (··7731) — $8,920.00", value: "business" },
 ]
 
 const TO_ACCOUNTS = [
-  { label: "High Yield Savings (··1192) — $42,100.00", value: "savings" },
-  { label: "Investment (··3349) — $18,200.00", value: "investment" },
+  { label: "Накопительный (··1192) — $42,100.00", value: "savings" },
+  { label: "Инвестиционный (··3349) — $18,200.00", value: "investment" },
 ]
 
 export function TransferFunds() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Transfer Funds</CardTitle>
+        <CardTitle>Перевод средств</CardTitle>
         <CardDescription>
-          Move money between your connected accounts.
+          Перемещайте деньги между подключёнными счетами.
         </CardDescription>
         <CardAction>
           <Button variant="ghost" size="icon-sm" className="bg-muted">
@@ -56,7 +56,7 @@ export function TransferFunds() {
         <FieldGroup>
           <Field>
             <FieldLabel htmlFor="transfer-amount">
-              Amount to Transfer
+              Сумма перевода
             </FieldLabel>
             <InputGroup>
               <InputGroupAddon>
@@ -66,7 +66,7 @@ export function TransferFunds() {
             </InputGroup>
           </Field>
           <Field>
-            <FieldLabel htmlFor="from-account">From Account</FieldLabel>
+            <FieldLabel htmlFor="from-account">Со счёта</FieldLabel>
             <Select items={FROM_ACCOUNTS} defaultValue="checking">
               <SelectTrigger id="from-account" className="w-full">
                 <SelectValue />
@@ -83,7 +83,7 @@ export function TransferFunds() {
             </Select>
           </Field>
           <Field>
-            <FieldLabel htmlFor="to-account">To Account</FieldLabel>
+            <FieldLabel htmlFor="to-account">На счёт</FieldLabel>
             <Select items={TO_ACCOUNTS} defaultValue="savings">
               <SelectTrigger id="to-account" className="w-full">
                 <SelectValue />
@@ -103,20 +103,20 @@ export function TransferFunds() {
             <ItemContent className="gap-3">
               <div className="flex items-center justify-between">
                 <span className="text-sm text-muted-foreground">
-                  Estimated arrival
+                  Ожидаемое зачисление
                 </span>
-                <span className="text-sm font-medium">Today, Apr 14</span>
+                <span className="text-sm font-medium">Сегодня, 14 апр.</span>
               </div>
               <Separator />
               <div className="flex items-center justify-between">
                 <span className="text-sm text-muted-foreground">
-                  Transaction fee
+                  Комиссия за перевод
                 </span>
                 <span className="text-sm font-medium tabular-nums">$0.00</span>
               </div>
               <Separator />
               <div className="flex items-center justify-between">
-                <span className="text-sm font-medium">Total amount</span>
+                <span className="text-sm font-medium">Итого</span>
                 <span className="text-sm font-semibold tabular-nums">
                   $1,200.00
                 </span>
@@ -126,7 +126,7 @@ export function TransferFunds() {
         </FieldGroup>
       </CardContent>
       <CardFooter>
-        <Button className="w-full">Confirm Transfer</Button>
+        <Button className="w-full">Подтвердить перевод</Button>
       </CardFooter>
     </Card>
   )

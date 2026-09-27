@@ -20,14 +20,14 @@ export function EmptyDistributeTrack() {
             <PlusIcon />
           </EmptyMedia>
           <EmptyHeader>
-            <EmptyTitle>Distribute Track</EmptyTitle>
+            <EmptyTitle>Распространить трек</EmptyTitle>
             <EmptyDescription>
-              Upload your first master to start reaching listeners on Spotify,
-              Apple Music, and more.
+              Загрузите свой первый мастер, чтобы начать выходить на
+              слушателей в Spotify, Apple Music и других сервисах.
             </EmptyDescription>
           </EmptyHeader>
           <EmptyContent>
-            <Button>Create Release</Button>
+            <Button>Создать релиз</Button>
           </EmptyContent>
         </Empty>
       </CardContent>

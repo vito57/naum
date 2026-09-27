@@ -22,8 +22,8 @@ export function RollerShades() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Living Room</CardTitle>
-        <CardDescription>Roller Shades</CardDescription>
+        <CardTitle>Гостиная</CardTitle>
+        <CardDescription>Роллетные шторы</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         <div className="flex h-32 flex-col overflow-hidden rounded-lg border bg-muted">
@@ -34,7 +34,7 @@ export function RollerShades() {
         </div>
         <div className="flex items-center gap-3">
           <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase">
-            Open
+            Открыть
           </span>
           <Slider
             value={position}
@@ -45,7 +45,7 @@ export function RollerShades() {
             className="flex-1"
           />
           <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase">
-            Close
+            Закрыть
           </span>
         </div>
       </CardContent>
@@ -63,13 +63,13 @@ export function RollerShades() {
           className="w-full"
         >
           <ToggleGroupItem value="open" className="flex-1">
-            Open
+            Открыто
           </ToggleGroupItem>
           <ToggleGroupItem value="half" className="flex-1">
-            Half
+            Наполовину
           </ToggleGroupItem>
           <ToggleGroupItem value="closed" className="flex-1">
-            Closed
+            Закрыто
           </ToggleGroupItem>
         </ToggleGroup>
       </CardFooter>

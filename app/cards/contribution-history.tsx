@@ -23,17 +23,17 @@ import { Item, ItemContent, ItemDescription } from "@/components/ui/item"
 // import { useDesignSystemSearchParams } from "@/app/(app)/create/lib/search-params"
 
 const chartData = [
-  { month: "Dec", amount: 800 },
-  { month: "Jan", amount: 1100 },
-  { month: "Feb", amount: 900 },
-  { month: "Mar", amount: 1300 },
-  { month: "Apr", amount: 750 },
-  { month: "May", amount: 1400 },
+  { month: "Дек", amount: 800 },
+  { month: "Янв", amount: 1100 },
+  { month: "Фев", amount: 900 },
+  { month: "Мар", amount: 1300 },
+  { month: "Апр", amount: 750 },
+  { month: "Май", amount: 1400 },
 ]
 
 const chartConfig = {
   amount: {
-    label: "Contribution",
+    label: "Взносы",
     color: "var(--chart-2)",
   },
 } satisfies ChartConfig
@@ -45,8 +45,8 @@ export function ContributionHistory() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Contribution History</CardTitle>
-        <CardDescription>Last 6 months of activity</CardDescription>
+        <CardTitle>История взносов</CardTitle>
+        <CardDescription>Активность за последние 6 месяцев</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig} className="h-[200px] w-full">
@@ -79,33 +79,33 @@ export function ContributionHistory() {
           <Item variant="muted" className="flex-col items-stretch">
             <ItemContent className="gap-1">
               <ItemDescription className="text-xs font-medium tracking-wider text-muted-foreground uppercase">
-                Upcoming
+                Запланировано
               </ItemDescription>
               <span className="cn-font-heading text-lg font-semibold">
-                May 25, 2024
+                25 мая 2024
               </span>
               <span className="text-sm text-muted-foreground">
-                $1,000 scheduled
+                $1,000 запланировано
               </span>
             </ItemContent>
           </Item>
           <Item variant="muted" className="flex-col items-stretch">
             <ItemContent className="gap-1">
               <ItemDescription className="text-xs font-medium tracking-wider text-muted-foreground uppercase">
-                Auto-Save Plan
+                План автонакопления
               </ItemDescription>
               <span className="cn-font-heading text-lg font-semibold">
-                Accelerated
+                Ускоренный
               </span>
               <span className="text-sm text-muted-foreground">
-                Recurring weekly
+                Еженедельно
               </span>
             </ItemContent>
           </Item>
         </div>
       </CardContent>
       <CardFooter>
-        <Button className="w-full">View Full Report</Button>
+        <Button className="w-full">Смотреть полный отчёт</Button>
       </CardFooter>
     </Card>
   )

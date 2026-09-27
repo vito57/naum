@@ -24,15 +24,17 @@ export function AccountAccess() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Account Access</CardTitle>
+        <CardTitle>Доступ к аккаунту</CardTitle>
         <CardDescription>
-          Update your credentials or re-authenticate.
+          Обновите данные доступа или пройдите повторную аутентификацию.
         </CardDescription>
       </CardHeader>
       <CardContent>
         <FieldGroup>
           <Field>
-            <FieldLabel htmlFor="email-address">Email Address</FieldLabel>
+            <FieldLabel htmlFor="email-address">
+              Адрес электронной почты
+            </FieldLabel>
             <Input
               id="email-address"
               type="email"
@@ -42,13 +44,13 @@ export function AccountAccess() {
           <Field>
             <div className="flex items-center justify-between">
               <FieldLabel htmlFor="current-password">
-                Current Password
+                Текущий пароль
               </FieldLabel>
               <a
                 href="#"
                 className="text-xs font-medium tracking-wider text-muted-foreground uppercase hover:text-foreground"
               >
-                Forgot?
+                Забыли?
               </a>
             </div>
             <Input
@@ -62,16 +64,16 @@ export function AccountAccess() {
       <CardFooter className="flex-col gap-4">
         <Button className="w-full">
           <LockKeyholeIcon />
-          Update Security
+          Обновить настройки безопасности
         </Button>
         <Item variant="muted" render={<a href="#" />}>
           <ItemMedia variant="icon">
             <AlertCircleIcon />
           </ItemMedia>
           <ItemContent>
-            <ItemTitle>Danger Zone</ItemTitle>
+            <ItemTitle>Опасная зона</ItemTitle>
             <ItemDescription className="line-clamp-1">
-              Archive account and remove catalog
+              Архивировать аккаунт и удалить каталог
             </ItemDescription>
           </ItemContent>
           <ArrowRightIcon />
